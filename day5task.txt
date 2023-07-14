@@ -1,0 +1,40 @@
+//1. for each loop in json
+const arroefun=(arr)=>{
+ let s=0;
+  arr.forEach(element => {
+                            s+=element;
+                          })
+  return s;
+            }
+const arr=[1,1,2,3,4];
+console.log(arrowfun(arr))
+
+//for loop
+const arrowfun=(arr)=>{
+       let s=0;
+       for (let i=0;i<arr.length;i++)
+        {
+          s+=arr[i];
+         }
+}
+const arr=[1,2,3,4];
+console.log(arrowfun(arr));
+
+//for in loop
+var json = {
+   jsonData:  [
+       {one: [11, 12, 13, 14, 15]},
+       {two: [21, 22, 23]},
+       {three: [31, 32]}
+   ]
+}; 
+for (var i=0; i<json.jsonData.length; i++) {
+   for (var key in json.jsonData[i]) {
+       for (var j= 0; j<json.jsonData[i][key].length; j++) {
+           console.log(json.jsonData[i][key][j])
+       }
+   }
+}
+‍
+
+      
